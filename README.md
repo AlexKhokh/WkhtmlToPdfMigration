@@ -22,16 +22,16 @@ Eventually, after many hours we had collected info from many topics and got list
 
 1. `sudo rpm -i wkhtmltox-0.12.6-1.centos7.x86_64.rpm`
 2. `yum install libpng.so.3`
-3. yum install libpng15.so.15
+3. `yum install libpng15.so.15`
 4. `yum install -y openssl-devel`
-5. yum install libjpeg-turbo
-6. yum install libgdiplus.so
-7. yum install libpng15.so.15
+5. `yum install libjpeg-turbo`
+6. `yum install libgdiplus.so`
+7. `yum install libpng15.so.15`
 8. `yum install -y libpng12.x86_64`
-9. yum install -y libpng15.x86_64
-10. yum install xorg-x11-fonts-75dpi
-11. yum install libgdiplus
-12. yum install libjpeg
+9. `yum install -y libpng15.x86_64`
+10. `yum install xorg-x11-fonts-75dpi`
+11. `yum install libgdiplus`
+12. `yum install libjpeg`
 
 It was verified on RedOS7, CentOS7, AlmaLinux, RHEL7 platforms.
 
