@@ -10,18 +10,18 @@ What about look at dependencies oflibjpeg62? Already installed, again.
 After that I found this topic - https://github.com/HakanL/WkHtmlToPdf-DotNet/issues/64 where folks talked about additional libraries.
 Eventually, after many hours we had collected info from many topics and got list of required libraries and installations:
 
-sudo rpm -i wkhtmltox-0.12.6-1.centos7.x86_64.rpm
-yum install libpng.so.3
-yum install libpng15.so.15
-yum install -y openssl-devel
-yum install libjpeg-turbo
-yum install libgdiplus.so
-yum install libpng15.so.15
-yum install -y libpng12.x86_64
-yum install -y libpng15.x86_64
-yum install xorg-x11-fonts-75dpi
-yum install libgdiplus
-yum install libjpeg
+-sudo rpm -i wkhtmltox-0.12.6-1.centos7.x86_64.rpm
+-yum install libpng.so.3
+-yum install libpng15.so.15
+-yum install -y openssl-devel
+-yum install libjpeg-turbo
+-yum install libgdiplus.so
+-yum install libpng15.so.15
+-yum install -y libpng12.x86_64
+-yum install -y libpng15.x86_64
+-yum install xorg-x11-fonts-75dpi
+-yum install libgdiplus
+-yum install libjpeg
 
 It was verified on RedOS7, CentOS7, AlmaLinux, RHEL7
 For 8th versions it works too with adjustments for package versions and their dependencies certainly.
