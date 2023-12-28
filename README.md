@@ -1,5 +1,5 @@
 # WkhtmlToPdfMigration
-There is good solution for convert html data to pdf known as [Wkhtmltopdf] (https://wkhtmltopdf.org/) and there is .NET wrapper for this library https://github.com/HakanL/WkHtmlToPdf-DotNet .
+There is good solution for convert html data to pdf known as Wkhtmltopdf https://wkhtmltopdf.org/ and there is .NET wrapper for this library https://github.com/HakanL/WkHtmlToPdf-DotNet .
 Once our team faced with issue linked to this wrapper. It works good on Windows platform and throwing exception on Linux platform despite the stated support linux.
 Exception like this:
 System.NotSupportedException : Unable to load native library. The platform may be missing native dependencies (libjpeg62, etc). Or the current platform is not supported.
@@ -10,8 +10,8 @@ What about look at dependencies oflibjpeg62? Already installed, again.
 After that I found this topic - https://github.com/HakanL/WkHtmlToPdf-DotNet/issues/64 where folks talked about additional libraries.
 Eventually, after many hours we had collected info from many topics and got list of required libraries and installations:
 
--sudo rpm -i wkhtmltox-0.12.6-1.centos7.x86_64.rpm
--yum install libpng.so.3
++sudo rpm -i wkhtmltox-0.12.6-1.centos7.x86_64.rpm
+*yum install libpng.so.3
 -yum install libpng15.so.15
 -yum install -y openssl-devel
 -yum install libjpeg-turbo
